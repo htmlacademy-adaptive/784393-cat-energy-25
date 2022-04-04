@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-<body class="page__body">
-  <header class="main-header">
+<body>
+  <header class="header">
       <div class="container">
-        <a class="main-header__logo logo" href="/" >
-          <img class="logo__image logo__image--picture" width="34" height="38" src="./img/logo/logo-mobile.png" alt="Логотип компании Кэт энерджи">
-          <img class="logo__image logo__image--designation" width="108" height="18" src="./img/logo/logo-description.svg" alt="Название компании Кэт энерджи">
+        <a class="header__logo" href="/" >
+          <img class="header__logo-image header__logo-image--picture" width="34" height="38" src="./img/index/logo-mobile.png" alt="Логотип компании Кэт энерджи">
+          <img class="header__logo-image header__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
         </a>
-        <nav class="main-header navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigaiton__link navigaiton__link--active">Главная</a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a href="#" class="header__navigaiton-link header__navigaiton-link--active">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог продукции</a>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Подбор программы</a>
             </li>
           </ul>
           <button class="navigation__toggle" type="button">
@@ -36,8 +36,8 @@
     <section class="intro">
       <div class="container">
         <h2 class="visually-hidden">Питание и программа.</h2>
-        <p class="intro__subtitle">Функциональное питание для котов</p>
-        <p class="intro__info">Занялся собой? Займись котом!</p>
+        <p class="intro__title">Функциональное питание для котов</p>
+        <p class="intro__subtitle">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="" alt="">
         <a class="intro__link button">Подобрать программу</a>
       </div>
@@ -85,71 +85,66 @@
         <p class="total__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="total__items">
           <div class="total__item">
-            <p class="total__item-quantity">5 кг</p>
-            <p class="total__item-description">Снижение веса</p>
+            <span class="total__item-quantity">5 кг</span>
+            <span class="total__item-description">Снижение веса</span>
           </div>
           <div class="total__item">
-            <p class="total__item-quantity">60 дней</p>
-            <p class="total__item-description">Затрачено времени</p>
-          </div>
-          <p class="total__applied">Затраты на питание: 15 000 РУБ.</p>
-          <div class="total__changes slider">
-            <div class="slider__item">
-              <img src="./img/total/before-cat.png" alt="" class="slider__image">
-            </div>
-
-            <div class="slider__item">
-              <img src="./img/total/after-cat.png" alt="" class="slider__image">
-            </div>
-            <div class="slider__buttons">
-              <button class="slider__button slider__button--before" type="button">Было</button>
-              <div class="slider__toggles">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle" type="button">2</button>
-              </div>
-              <button class="slider__button slider__button--after" type="button">Стало</button>
-            </div>
+            <span class="total__item-quantity">60 дней</span>
+            <span class="total__item-description">Затрачено времени</span>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="shop-map">
-      <h2 class="visually-hidden">Адрес нашего магазина.</h2>
-      <div class="map">
-        <div class="container">
-          <div class="shop-map__detail">
-            <p class="shop-map__info">приглашаем к сотрудничеству дилеров!</p>
-            <p class="shop-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="total__applied">Затраты на питание: 15 000 РУБ.</p>
+        <div class="total__changes slider">
+          <div class="slider__item">
+            <img class="slider__image" width="280" height="232" src="./img/index/before-cat.png" alt="Кот до питания нашим кормом">
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" width="243" height="232" src="./img/index/after-cat.png" alt="Кот после питания нашим кормом">
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button slider__button--before" type="button">Было</button>
+            <div class="slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+            </div>
+            <button class="slider__button slider__button--after" type="button">Стало</button>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
+    <section class="shop-address">
+      <h2 class="visually-hidden">Адрес нашего магазина.</h2>
+      <div class="container">
+        <div class="shop-address__detail">
+          <p class="shop-address__info">приглашаем к сотрудничеству дилеров!</p>
+          <p class="shop-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="map"></div>
+    </section>
     <div class="container">
-      <a class="footer__logo logo" href="/" >
-        <img class="logo__image logo__image--designation" width="108" height="18" src="./img/logo/logo-description.svg" alt="Название компании Кэт энерджи">
+      <a class="footer__logo" href="/" >
+        <img class="footer__logo-image footer__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--vk" href="#">
             <span class="visually-hidden">Наш Во контакте.</span>
           </a>
-
         </li>
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--youtube" href="#">
             <span class="visually-hidden">Наш ютуб.</span>
           </a>
         </li>
-
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--telegram" href="#">
             <span class="visually-hidden">Наш телеграм.</span>
           </a>
         </li>
       </ul>
-
       <div class="footer__copyright">
         <p class="footer__copyright-info">HTML Academy</p>
         <a href="" class="footer__copyright-link">
