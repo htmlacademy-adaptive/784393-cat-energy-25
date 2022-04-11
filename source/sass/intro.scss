@@ -1,0 +1,24 @@
+.intro {
+  padding-top: 27px;
+  background-color: #cccccc;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/intro-bg-cat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.intro__subtitle {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+

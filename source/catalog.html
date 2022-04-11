@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
@@ -16,13 +17,13 @@
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a href="#" class="header__navigaiton-link header__navigaiton-link--active">Главная</a>
+            <a class="header__navigation-link header__navigation-link--active" href="/source/index.html">Главная</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Каталог продукции</a>
+            <a class="header__navigation-link" href="/source/catalog.html">Каталог продукции</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Подбор программы</a>
+            <a class="header__navigation-link" href="/source/form.html">Подбор программы</a>
           </li>
         </ul>
         <button class="navigation__toggle" type="button">
@@ -118,7 +119,7 @@
                 </tr>
               </table>
             </div>
-            <button class="product-details__button button">Заказать</button>
+            <button class="product-details__button button" type="button">Заказать</button>
           </li>
           <li class="catalog__item product-details">
             <img class="product-details__image" src="./img/catalog/product-buckwheat-500.png" width="68" height="78" alt="Товар Cat energy pro масса 500 грамм со вкусом гречки.">
@@ -139,7 +140,7 @@
                 </tr>
               </table>
             </div>
-            <button class="product-details__button button">Заказать</button>
+            <button class="product-details__button button" type="button">Заказать</button>
           </li>
           <li class="catalog__item product-details">
             <img class="product-details__image" src="./img/catalog/product-buckwheat-1000.png" width="84" height="100" alt="Товар Cat energy pro масса 1000 грамм со вкусом гречки.">
@@ -160,7 +161,7 @@
                 </tr>
               </table>
             </div>
-            <button class="product-details__button button">Заказать</button>
+            <button class="product-details__button button" type="button">Заказать</button>
           </li>
           <li class="catalog__item product-details">
             <img class="product-details__image" src="./img/catalog/product-rice-500.png" width="72" height="84" alt="Товар Cat energy pro масса 500 грамм со вкусом риса.">
@@ -181,13 +182,13 @@
                 </tr>
               </table>
             </div>
-            <button class="product-details__button button">Заказать</button>
+            <button class="product-details__button button" type="button">Заказать</button>
           </li>
         </ul>
         <div class="catalog__more">
           <p class="catalog__content">Показать еще 100500 товаров</p>
           <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog__button button catalog__button--more">Показать все</button>
+          <button class="catalog__button button">Показать все</button>
         </div>
       </div>
     </section>
@@ -203,36 +204,42 @@
                 <td class="additionally-product__table-data">200 Р.</td>
               </tr>
             </table>
+            <button class="additionally-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additionally-product">
-            <h3 class="additionally-product__title">Питьевая вода</h3>
+            <h3 class="additionally-product__subtitle">Питьевая вода</h3>
             <table class="additionally-product__table">
               <tr class="additionally-product__table-row">
                 <td class="additionally-product__table-data">5 литров</td>
                 <td class="additionally-product__table-data">50 Р.</td>
               </tr>
             </table>
+            <button class="additionally-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additionally-product">
-            <h3 class="additionally-product__title">Молоко</h3>
+            <h3 class="additionally-product__subtitle">Молоко</h3>
             <table class="additionally-product__table">
               <tr class="additionally-product__table-row">
                 <td class="additionally-product__table-data">1 литр</td>
                 <td class="additionally-product__table-data">100 Р.</td>
               </tr>
             </table>
+            <button class="additionally-product__button button" type="button">Заказать</button>
           </li>
           <li class="additionally__item additionally-product">
-            <h3 class="additionally-product__title">Витамины</h3>
+            <h3 class="additionally-product__subtitle">Витамины</h3>
             <table class="additionally-product__table">
               <tr class="additionally-product__table-row">
                 <td class="additionally-product__table-data">1 упаковка (30 г)</td>
                 <td class="additionally-product__table-data">300 Р.</td>
               </tr>
             </table>
+            <button class="additionally-product__button button" type="button">Заказать</button>
           </li>
         </ul>
-        <p class="additionally__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additionally__gift">
+          <p class="additionally__gift-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>
