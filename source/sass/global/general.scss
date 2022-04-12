@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 *,
 *::after,
 *::before {
@@ -9,7 +11,7 @@ body {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #444444;
+  color: $primary-color;
   line-height: 18px;
 }
 

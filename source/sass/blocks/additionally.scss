@@ -13,10 +13,8 @@
 }
 
 .additionally__list {
-  margin: 0;
+  @include resseting-lists;
   margin-bottom: 35px;
-  padding: 0;
-  list-style-type: none;
 }
 
 .additionally-product__subtitle {
@@ -25,7 +23,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #222222;
+  color: $secondary-dark;
 }
 
 .additionally-product__table-data {
@@ -36,8 +34,8 @@
 .additionally__gift {
   padding-top: 187px;
   padding-bottom: 43px;
-  background-color: #cccccc;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/additionally-present-bg.png");
+  background-color: $secondary-gray;
+  background-image: linear-gradient($section-bg, $section-bg), url("../img/catalog/additionally-present-bg.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -47,6 +45,5 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $secondary-white;
 }
-

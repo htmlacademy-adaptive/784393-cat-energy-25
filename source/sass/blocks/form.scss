@@ -5,7 +5,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .form__data {
@@ -26,7 +26,7 @@
 }
 
 .form__data-input {
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-border-color;
 
   &::placeholder {
     font-weight: 400;
@@ -54,8 +54,8 @@
 
 .form__contact {
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
+  margin-bottom: 23px;
   border: none;
 }
 
@@ -64,7 +64,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .form__contact-label {
@@ -95,8 +95,8 @@
 
 .form__сomment {
   margin: 0;
-  margin-bottom: 22px;
   padding: 0;
+  margin-bottom: 22px;
   border: none;
 }
 
@@ -106,11 +106,11 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .form__comment-description {
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-border-color;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -121,8 +121,8 @@
 
 .form__additionally {
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
+  margin-bottom: 34px;
   border: none;
 }
 
@@ -131,7 +131,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .form__additionally-label {
@@ -147,13 +147,12 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .form__hint {
   margin: 0;
   line-height: 16px;
   text-align: center;
-  color: #000000;
+  color: $secondary-color;
 }
-

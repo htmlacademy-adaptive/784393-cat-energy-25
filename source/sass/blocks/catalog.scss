@@ -1,7 +1,6 @@
 .catalog {
   padding-top: 27px;
   padding-bottom: 25px;
-
 }
 
 .catalog-title {
@@ -10,13 +9,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resseting-lists;
 }
 
 .product-details__title {
@@ -26,7 +23,7 @@
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
-  color: #222222;
+  color: $secondary-dark;
 }
 
 .product-details__table-data {
@@ -49,6 +46,6 @@
 }
 
 .catalog__button {
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: $program-item-bg;
+  color: $primary-color;
 }

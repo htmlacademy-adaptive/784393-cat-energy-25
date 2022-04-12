@@ -3,8 +3,7 @@
 }
 
 .footer__social-list {
-  margin: 0;
-  padding: 0;
+  @include resseting-lists;
 }
 
 .footer__copyright-info {

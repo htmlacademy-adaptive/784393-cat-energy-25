@@ -8,14 +8,12 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  color: #000000;
+  color: $secondary-color;
   line-height: 40px;
 }
 
 .info__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resseting-lists;
 }
 
 .info__item {

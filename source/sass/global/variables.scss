@@ -1,0 +1,18 @@
+// Цвета
+$primary-color: #444444;
+$secondary-color: #000000;
+$secondary-white: #ffffff;
+$secondary-dark: #222222;
+$secondary-gray: #cccccc;
+$input-border-color: #e7e7e7;
+$program-item-bg: #f2f2f2;
+$rare-dark: #111111;
+$rare-gray: #eaeaea;
+$section-bg: rgba(104, 183, 56, 0.85);
+
+// Примеси
+@mixin resseting-lists ($margin-reset: 0, $padding-reset: 0, $list-style: none) {
+  margin: $margin-reset;
+  padding: $padding-reset;
+  list-style: $list-style;
+}

@@ -1,44 +1,50 @@
 // Шрифты
-@import "fonts.scss";
-
-// Общие стили
-@import "general.scss";
-
-// Скрытые заголовки
-@import "visually-hidden.scss";
-
-// Шапка
-@import "header.scss";
-
-// Блок интро
-@import "intro.scss";
+@import "global/fonts.scss";
 
 // Кнопки
-@import "button.scss";
+@import "global/button.scss";
+
+// Общие стили
+@import "global/general.scss";
+
+// Переменные
+@import "global/variables.scss";
+
+// Скрытые заголовки
+@import "blocks/visually-hidden.scss";
+
+// Шапка
+@import "blocks/header.scss";
+
+// Блок интро
+@import "blocks/intro.scss";
 
 // Блок с программами питания
-@import "programs.scss";
+@import "blocks/programs.scss";
 
 // Блок с информацией
-@import "info.scss";
+@import "blocks/info.scss";
 
 // Блок с примером
-@import "total.scss";
+@import "blocks/total.scss";
+
+// Блок со слайдером
+@import "blocks/slider";
 
 // Подвал сайта
-@import "footer.scss";
+@import "blocks/footer.scss";
 
 // Блок с адрессом магазина
-@import "shop-address.scss";
+@import "blocks/shop-address.scss";
 
 // Блок каталог
-@import "catalog.scss";
+@import "blocks/catalog.scss";
 
 // Блок с дополнительными товарами
-@import "additionally.scss";
+@import "blocks/additionally.scss";
 
 // Блок с выбором программы
-@import "choice.scss";
+@import "blocks/choice.scss";
 
 // Блок с формой
-@import "form.scss"
+@import "blocks/form.scss"

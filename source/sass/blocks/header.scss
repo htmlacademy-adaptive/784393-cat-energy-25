@@ -1,18 +1,16 @@
 .header {
   padding-top: 10px;
   padding-bottom: 18px;
-  background-color: #ffffff;
+  background-color: $secondary-white;
 }
 
 .header__navigation-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resseting-lists;
 }
 
 .header__navigation-link {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
   font-weight: 500;
 }
