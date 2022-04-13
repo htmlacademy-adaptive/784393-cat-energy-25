@@ -1,0 +1,49 @@
+.additionally {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.additionally__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.additionally__list {
+  @include resseting-lists;
+  margin-bottom: 35px;
+}
+
+.additionally-product__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $secondary-dark;
+}
+
+.additionally-product__table-data {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additionally__gift {
+  padding-top: 187px;
+  padding-bottom: 43px;
+  background-color: $secondary-gray;
+  background-image: linear-gradient($section-bg, $section-bg), url("../img/catalog/additionally-present-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.additionally__gift-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $secondary-white;
+}

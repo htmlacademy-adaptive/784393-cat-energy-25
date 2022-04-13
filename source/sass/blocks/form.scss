@@ -1,0 +1,158 @@
+.form__info {
+  margin: 0;
+  margin-bottom: 39px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.form__data {
+  padding: 0;
+  padding-bottom: 24px;
+  border: none;
+}
+
+.form__data-label {
+  display: block;
+}
+
+.form__data-info {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__data-input {
+  border: 1px solid $input-border-color;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__programm {
+  padding-top: 22px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 19px;
+  border: none;
+}
+
+.form__programm-label {
+  display: block;
+}
+
+.form__programm-radio {
+  margin: 0;
+}
+
+.form__contact {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+  border: none;
+}
+
+.form__contact-subtitle {
+  margin-bottom: 35px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $secondary-color;
+}
+
+.form__contact-label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.form__contact-info {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__сomment {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+  border: none;
+}
+
+.form__comment-subtitle {
+  margin-bottom: 37px;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $secondary-color;
+}
+
+.form__comment-description {
+  border: 1px solid $input-border-color;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.form__additionally {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  border: none;
+}
+
+.form__additionally-subtitle {
+  margin-bottom: 34px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: $secondary-color;
+}
+
+.form__additionally-label {
+  margin-bottom: 13px;
+  display: block;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__additionally-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.form__hint {
+  margin: 0;
+  line-height: 16px;
+  text-align: center;
+  color: $secondary-color;
+}

@@ -1,1 +1,50 @@
-// Начните писать стили здесь
+// Шрифты
+@import "global/fonts.scss";
+
+// Кнопки
+@import "global/button.scss";
+
+// Общие стили
+@import "global/general.scss";
+
+// Переменные
+@import "global/variables.scss";
+
+// Скрытые заголовки
+@import "blocks/visually-hidden.scss";
+
+// Шапка
+@import "blocks/header.scss";
+
+// Блок интро
+@import "blocks/intro.scss";
+
+// Блок с программами питания
+@import "blocks/programs.scss";
+
+// Блок с информацией
+@import "blocks/info.scss";
+
+// Блок с примером
+@import "blocks/total.scss";
+
+// Блок со слайдером
+@import "blocks/slider";
+
+// Подвал сайта
+@import "blocks/footer.scss";
+
+// Блок с адрессом магазина
+@import "blocks/shop-address.scss";
+
+// Блок каталог
+@import "blocks/catalog.scss";
+
+// Блок с дополнительными товарами
+@import "blocks/additionally.scss";
+
+// Блок с выбором программы
+@import "blocks/choice.scss";
+
+// Блок с формой
+@import "blocks/form.scss"

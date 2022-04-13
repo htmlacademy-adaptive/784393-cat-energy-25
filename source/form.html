@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <a class="header__logo" href="/" >
+      <a class="header__logo" href="./index.html">
         <img class="header__logo-image header__logo-image--picture" width="34" height="38" src="./img/index/logo-mobile.png" alt="Логотип компании Кэт энерджи">
         <img class="header__logo-image header__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <a href="#" class="header__navigaiton-link header__navigaiton-link--active">Главная</a>
+            <a class="header__navigation-link" href="./index.html">Главная</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Каталог продукции</a>
+            <a class="header__navigation-link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Подбор программы</a>
+            <a class="header__navigation-link header__navigation-link--active" href="/">Подбор программы</a>
           </li>
         </ul>
         <button class="navigation__toggle" type="button">
@@ -31,15 +32,14 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
     <section class="choice">
       <div class="container">
-        <h1 class="choice-title">Подбор программы</h1>
+        <h1 class="choice__title">Подбор программы</h1>
         <form action="https://echo.htmlacademy.ru" class="form" method="POST">
           <p class="form__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <fieldset class="form__data">
-            <label class=form__data-label">
+            <label class="form__data-label">
               <span class="form__data-info">Имя:*</span>
               <input class="form__data-input" type="text" placeholder="Барсик">
             </label>
@@ -70,19 +70,19 @@
 
           <fieldset class="form__contact">
             <legend class="form__contact-subtitle">Контактные данные (владельца кота)</legend>
-            <label class=form__contact-label">
+            <label class="form__contact-label">
               <span class="form__contact-info">E-mail:*</span>
               <input class="form__contact-input" type="email" placeholder="kuklachev@gmail.com">
             </label>
             <label class="form__contact-label">
               <span class="form__contact-info">Телефон:*</span>
-              <input class="form__contact-input" type="number" placeholder="8 (960) 900-60-90">
+              <input class="form__contact-input" type="tel" placeholder="8 (960) 900-60-90">
             </label>
           </fieldset>
 
           <fieldset class="form__сomment">
             <legend class="form__comment-subtitle">Комментарий</legend>
-            <textarea class="form__comment-description" cols="30" rows="10"></textarea>
+            <textarea class="form__comment-description" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__additionally">

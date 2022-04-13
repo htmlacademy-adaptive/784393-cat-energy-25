@@ -1,0 +1,11 @@
+.footer {
+  padding-bottom: 37px;
+}
+
+.footer__social-list {
+  @include resseting-lists;
+}
+
+.footer__copyright-info {
+  margin: 0;
+}

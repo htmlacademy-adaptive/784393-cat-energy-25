@@ -1,0 +1,38 @@
+.total {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: $rare-gray;
+}
+
+.total__subtitle {
+  margin: 0;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $secondary-color;
+  line-height: 40px;
+  text-align: center;
+}
+
+.total__info {
+  margin: 0;
+}
+
+.total__item-quantity {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $secondary-color;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.total__applied {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  color: $secondary-color;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

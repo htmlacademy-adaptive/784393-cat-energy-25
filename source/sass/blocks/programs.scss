@@ -1,0 +1,31 @@
+.programs {
+  padding-top: 20px;
+}
+
+.program__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: $program-item-bg;
+}
+
+.program__item-title {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $secondary-color;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__item-info {
+  margin: 0;
+}
+
+.program__item-link {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: $secondary-color;
+  line-height: 16px;
+  text-transform: uppercase;
+}
