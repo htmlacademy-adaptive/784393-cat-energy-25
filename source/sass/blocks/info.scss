@@ -17,6 +17,16 @@
   @include resseting-lists;
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: $table-width) {
+    grid-template-columns: 250px 250px;
+    column-gap: 209px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 73px;
+  }
 }
 
 .info__item {
@@ -62,24 +72,8 @@
       background-image: url("../img/icons/icon-alarm.svg");
     }
   }
-}
 
-.info__item-content {
-  margin: 0;
-  max-width: 200px;
-}
-
-.info__item-number {
-  display: none;
-}
-
-@media (min-width: $table-width) {
-  .info__list {
-    grid-template-columns: 250px 250px;
-    column-gap: 209px;
-  }
-
-  .info__item {
+  @media (min-width: $table-width) {
     flex-direction: column;
     margin-bottom: 77px;
 
@@ -90,15 +84,24 @@
       height: 80px;
     }
   }
+}
 
-  .info__item-content {
+.info__item-content {
+  margin: 0;
+  max-width: 200px;
+
+  @media (min-width: $table-width) {
     margin-right: auto;
     font-size: 16px;
     line-height: 24px;
     min-width: 250px;
   }
+}
 
-  .info__item-number {
+.info__item-number {
+  display: none;
+
+  @media (min-width: $table-width) {
     display: block;
     position: absolute;
     top: -23px;
@@ -108,12 +111,5 @@
     color: $program-item-bg;
     line-height: 250px;
     z-index: -1;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .info__list {
-    grid-template-columns: repeat(4, 250px);
-    column-gap: 73px;
   }
 }

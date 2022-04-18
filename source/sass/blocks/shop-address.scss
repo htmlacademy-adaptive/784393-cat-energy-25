@@ -1,6 +1,10 @@
 .shop-address {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @media (min-width: $table-width) {
+    background-color: $secondary-white;
+  }
 }
 
 .shop-address__detail {
@@ -8,6 +12,16 @@
   display: flex;
   justify-content: space-between;
   max-width: 320px;
+
+  @media (min-width: $table-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding: 56px 80px;
+    width: 565px;
+  }
 }
 
 .shop-address__info {
@@ -19,40 +33,22 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $rare-dark;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .shop-address__address {
   margin: 0;
   width: 140px;
   line-height: 20px;
-}
 
-@media (min-width: $table-width) {
-  .shop-address {
-    background-color: $secondary-white;
-  }
-
-  .shop-address__detail {
-    max-width: 100%;
-  }
-
-  .shop-address__info {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .shop-address__address {
+  @media (min-width: $table-width) {
     width: 160px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .shop-address__detail {
-    margin-left: 0;
-    padding: 56px 80px;
-    width: 565px;
   }
 }

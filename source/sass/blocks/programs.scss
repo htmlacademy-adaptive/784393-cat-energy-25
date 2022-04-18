@@ -1,5 +1,17 @@
 .programs {
   padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 81px;
+  }
+}
+
+.programs__items {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .program__item {
@@ -49,41 +61,8 @@
     background-color: $second-element-bg;
     border-radius: 50%;
   }
-}
 
-.program__item-title {
-  margin: 0;
-  margin-bottom: 29px;
-  padding-left: 30px;
-  padding-top: 7px;
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: $secondary-color;
-  line-height: 37px;
-  text-transform: uppercase;
-
-  &--pro {
-    padding-left: 55px;
-  }
-}
-
-.program__item-info {
-  margin: 0;
-  margin-bottom: 38px;
-}
-
-.program__item-link {
-  font-size: 16px;
-  font-family: "Oswald", sans-serif;
-  color: $secondary-color;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-@media (min-width: $table-width) {
-  .program__item {
+  @media (min-width: $table-width) {
     padding: 71px 62px 53px 52px;
 
     &::after {
@@ -118,39 +97,7 @@
     }
   }
 
-  .program__item-title {
-    margin-bottom: 24px;
-    padding: 0;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
-  }
-
-  .program__item-info {
-    margin-bottom: 48px;
-    max-width: 340px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .program__item-link {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programs {
-    padding-top: 81px;
-  }
-
-  .programs__items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .program__item {
+  @media (min-width: $desktop-width) {
     padding: 71px 51px 55px 52px;
     width: 570px;
 
@@ -185,13 +132,64 @@
       }
     }
   }
+}
 
-  .program__item-title {
+.program__item-title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 30px;
+  padding-top: 7px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: $secondary-color;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  &--pro {
+    padding-left: 55px;
+  }
+
+  @media (min-width: $table-width) {
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     text-align: center;
   }
+}
 
-  .program__item-info {
+.program__item-info {
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 48px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 100%;
+  }
+}
+
+.program__item-link {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: $secondary-color;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
