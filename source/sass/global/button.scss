@@ -3,10 +3,18 @@
 .button {
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 244px;
   font-family: "Oswold", sans-serif;
   background-color: #68b738;
   color: $secondary-white;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button {
+    margin: 0 auto;
+    max-width: 280px;
+  }
 }

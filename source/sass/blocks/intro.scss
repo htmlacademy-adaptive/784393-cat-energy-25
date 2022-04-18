@@ -1,13 +1,21 @@
 .intro {
   padding-top: 27px;
   background-color: $secondary-gray;
-  background-image: linear-gradient($section-bg, $section-bg), url("../img/index/intro-bg-cat.png");
-  background-position: center;
+  background-image: linear-gradient(to bottom, $section-bg 0 300px, $secondary-white 300px 100%), url("../img/index/intro-bg-cat.png");
+  background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .intro__title {
   margin: 0;
+  margin-bottom: 24px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -17,7 +25,109 @@
 
 .intro__subtitle {
   margin: 0;
+  margin-bottom: 29px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  text-align: center;
   color: $secondary-white;
+}
+
+.into__wrapper-image {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.intro__image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.intro__link {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $table-width) {
+  .intro {
+    background-image: none;
+    background-color: $secondary-white;
+  }
+
+  .intro__title {
+    margin-bottom: 41px;
+    padding-right: 100px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    color: $secondary-color;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 49px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    color: $secondary-color;
+  }
+
+  .into__wrapper-image {
+    margin-bottom: -75px;
+    order: 2;
+    position: relative;
+    top: -75px;
+    width: 710px;
+  }
+
+  .intro__image {
+    padding-right: 100px;
+  }
+
+  .intro__link {
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 141px;
+    position: relative;
+    background-image: linear-gradient(to right, $secondary-white 0 50%, $section-bg  50% 100%), url("../img/index/intro-bg-desktop.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .intro__container {
+    height: 696px;
+  }
+
+  .intro__title {
+    margin-top: 82px;
+    padding-right: 0;
+    max-width: 430px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 52px;
+    max-width: 285px;
+  }
+
+  .intro__link {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 304px;
+  }
+
+  .into__wrapper-image {
+    margin-bottom: 0;
+    top: 0;
+  }
+
+  .intro__image {
+    padding-right: 0;
+  }
 }

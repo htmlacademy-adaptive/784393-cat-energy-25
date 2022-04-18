@@ -3,8 +3,16 @@
   padding-bottom: 26px;
 }
 
+.shop-address__detail {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+}
+
 .shop-address__info {
   margin: 0;
+  width: 140px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -15,5 +23,36 @@
 
 .shop-address__address {
   margin: 0;
+  width: 140px;
   line-height: 20px;
+}
+
+@media (min-width: $table-width) {
+  .shop-address {
+    background-color: $secondary-white;
+  }
+
+  .shop-address__detail {
+    max-width: 100%;
+  }
+
+  .shop-address__info {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .shop-address__address {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shop-address__detail {
+    margin-left: 0;
+    padding: 56px 80px;
+    width: 565px;
+  }
 }

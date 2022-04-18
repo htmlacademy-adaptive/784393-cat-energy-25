@@ -6,6 +6,7 @@
 
 .total__subtitle {
   margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -16,9 +17,28 @@
 
 .total__info {
   margin: 0;
+  margin-bottom: 20px;
+}
+
+.total__items {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.total__item {
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.total__item-description {
+  display: block;
 }
 
 .total__item-quantity {
+  display: block;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -30,9 +50,78 @@
 
 .total__applied {
   margin: 0;
+  margin-bottom: 40px;
+  flex-grow: 1;
   font-family: "Oswald", sans-serif;
   color: $secondary-color;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $table-width) {
+  .total {
+    padding-top: 43px;
+    position: relative;
+    background-color: $secondary-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: $rare-second-gray;
+    }
+  }
+
+  .total__subtitle {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .total__info {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .total__item {
+    width: 162px;
+  }
+
+  .total__applied {
+    max-width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .total__container {
+    display: flex;
+  }
+
+  .total__content-wrapper {
+    width: 440px;
+  }
+
+  .total__item {
+    margin-bottom: 47px;
+  }
+
+  .total__applied {
+    margin-bottom: 0;
+    display: flex;
+    max-width: 100%;
+  }
+
+  .total__applied-info {
+    margin-right: 63px;
+  }
 }
