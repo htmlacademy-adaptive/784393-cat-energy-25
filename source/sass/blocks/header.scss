@@ -30,16 +30,12 @@
     background-color: transparent;
 
     &::before {
-      position: absolute;
-      content: "";
       width: 50%;
       min-height: 805px;
       top: 0;
       right: 0;
       background-image: url("../img/index/intro-decstop-bg.png");
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
+
     }
   }
 }
