@@ -1,11 +1,103 @@
 .footer {
   padding-bottom: 37px;
+  background-color: $program-item-bg;
+
+  @media (min-width: $table-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.footer__container {
+  @media (min-width: $table-width) {
+    padding-top: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 52px;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social-list {
   @include resseting-lists;
+  margin: 0 auto 43px;
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
+}
+
+.footer__social-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--vk {
+    &::before {
+      background-image: url("../img/icons/icon-vkontakte.svg");
+    }
+  }
+
+  &--youtube {
+    &::before {
+      background-image: url("../img/icons/icon-youtube.svg");
+    }
+  }
+
+  &--telegram {
+    &::before {
+      background-image: url("../img/icons/icon-telegram.svg");
+    }
+  }
+}
+
+.footer__copyright {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
 }
 
 .footer__copyright-info {
   margin: 0;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+  }
+}
+
+.footer__copyright-link {
+  @media (min-width: $table-width) {
+    margin-left: 22px;
+  }
 }

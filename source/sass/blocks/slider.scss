@@ -1,3 +1,24 @@
+.slider {
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.slider__item {
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.slider__buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+}
+
 .slider__button {
   padding: 0;
   font-family: "Owald", sans-serif;
@@ -9,4 +30,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $rare-gray;
+  }
 }
