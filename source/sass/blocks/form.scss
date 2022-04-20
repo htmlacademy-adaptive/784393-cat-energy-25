@@ -1,32 +1,69 @@
 .form__info {
   margin: 0;
   margin-bottom: 39px;
+  max-width: 226px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
+}
+
+.form__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .form__data {
+  margin: 0;
   padding: 0;
   padding-bottom: 24px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__data-label {
-  display: block;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__data-info {
+  margin-right: 13px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__data-input {
+  padding: 13px 13px 15px;
   border: 1px solid $input-border-color;
+  width: 100%;
 
   &::placeholder {
     font-weight: 400;
@@ -34,22 +71,62 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
 
 .form__programm {
+  margin: 0;
   padding-top: 22px;
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 19px;
   border: none;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 71px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 28px;
+    padding-left: 28px;
+    width: 570px;
+  }
 }
 
 .form__programm-label {
+  margin-bottom: 19px;
   display: block;
 }
 
 .form__programm-radio {
   margin: 0;
+
+  @media (min-width: $table-width) {
+    margin-right: 20px;
+  }
+}
+
+.form__programm-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $secondary-dark;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__contact {
@@ -57,6 +134,16 @@
   padding: 0;
   margin-bottom: 23px;
   border: none;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__contact-subtitle {
@@ -65,24 +152,47 @@
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__contact-label {
   margin-bottom: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__contact-info {
+  margin-right: 11px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__contact-input {
+  padding: 13px 13px 15px 15px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  width: 100%;
+  border: 1px solid $rare-second-leght-gray;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -91,6 +201,16 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
 
 .form__сomment {
@@ -98,6 +218,10 @@
   padding: 0;
   margin-bottom: 22px;
   border: none;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .form__comment-subtitle {
@@ -107,15 +231,36 @@
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__comment-description {
+  padding: 15px 12px 15px 15px;
   border: 1px solid $input-border-color;
+  width: 100%;
+  height: 150px;
+  resize: none;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -123,7 +268,19 @@
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
+  display: flex;
+  flex-direction: column;
   border: none;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 54px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .form__additionally-subtitle {
@@ -132,6 +289,20 @@
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__additionally-input {
+  margin-right: 16px;
+
+  @media (min-width: $table-width) {
+    margin-right: 19px;
+  }
 }
 
 .form__additionally-label {
@@ -141,6 +312,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $table-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .form__additionally-name {
@@ -148,6 +327,29 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__button {
+  margin-bottom: 21px;
+  width: 100%;
+  display: block;
+
+  @media (min-width: $table-width) {
+    margin-right: 61px;
+    display: inline-block;
+    max-width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+    margin-bottom: 0;
+    max-width: 568px;
+  }
 }
 
 .form__hint {
@@ -155,4 +357,10 @@
   line-height: 16px;
   text-align: center;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

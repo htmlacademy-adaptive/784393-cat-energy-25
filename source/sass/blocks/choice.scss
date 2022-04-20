@@ -11,4 +11,17 @@
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
