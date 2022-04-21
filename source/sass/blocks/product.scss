@@ -1,0 +1,135 @@
+.product-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--more {
+    padding-top: 78px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (min-width: $table-width) {
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $program-item-bg;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--more {
+      border: 2px solid $program-item-bg;
+      background-color: inherit;
+    }
+  }
+}
+
+.product-details__wrapper {
+  display: flex;
+  align-items: center;
+  width: 50%;
+
+  @media (min-width: $table-width) {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.product-details__info {
+  margin-bottom: 22px;
+  width: 50%;
+
+  @media (min-width: $table-width) {
+    width: 100%;
+  }
+}
+
+.product-details__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $secondary-dark;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.product-details__table {
+  width: 100%;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.product-details__table-data {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+  }
+}
+
+.product-details__more {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-details__content {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: $rare-dark;
+  text-transform: uppercase;
+  line-height: 20px;
+
+  @media (min-width: $table-width) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.product-details__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $table-width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.product-details__button {
+  width: 100%;
+  margin-left: auto;
+
+  &--more {
+    background-color: $program-item-bg;
+    color: $primary-color;
+  }
+
+  @media (min-width: $table-width) {
+    margin-right: auto;
+    margin-top: auto;
+  }
+}

@@ -5,25 +5,94 @@
 
 .additionally__title {
   margin: 0;
+  margin-bottom: 36px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
+  color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 81px;
+  }
+}
+
+.additionally__wrapper-content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additionally__list {
   @include resseting-lists;
+  margin: auto;
   margin-bottom: 35px;
+  max-width: 320px;
+
+  @media (min-width: $table-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 896px;
+  }
+}
+
+.additionally-product {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $table-width) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .additionally-product__subtitle {
+  padding-left: 20px;
   margin: 0;
+  margin-bottom: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $secondary-dark;
+
+  @media (min-width: $table-width) {
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additionally-product__table {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  width: 280px;
+
+  @media (min-width: $table-width) {
+    margin-right: 0;
+    margin-left: auto;
+    width: 225px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
 }
 
 .additionally-product__table-data {
@@ -31,19 +100,70 @@
   line-height: 14px;
 }
 
+.additionally-product__button {
+  width: 100%;
+  display: block;
+
+  @media (min-width: $table-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
 .additionally__gift {
   padding-top: 187px;
   padding-bottom: 43px;
-  background-color: $secondary-gray;
-  background-image: linear-gradient($section-bg, $section-bg), url("../img/catalog/additionally-present-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/index/additionally-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+  }
+
+  @media (min-width: $table-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 255px;
+    padding-bottom: 42px;
+    justify-content: center;
+    width: 245px;
+  }
 }
 
 .additionally__gift-text {
-  margin: 0;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $secondary-white;
+  max-width: 161px;
+
+  @media (min-width: $table-width) {
+    text-align: left;
+    margin: 0;
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    text-align: center;
+  }
 }

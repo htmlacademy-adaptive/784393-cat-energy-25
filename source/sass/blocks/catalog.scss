@@ -1,51 +1,52 @@
 .catalog {
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
-.catalog-title {
+.catalog__title {
   margin: 0;
+  margin-bottom: 41px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {
   @include resseting-lists;
-}
+  margin: auto;
+  max-width: 320px;
 
-.product-details__title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-transform: uppercase;
-  color: $secondary-dark;
-}
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    column-gap: 60px;
+    row-gap: 60px;
+    max-width: 100%;
+  }
 
-.product-details__table-data {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.catalog__content {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.catalog__text {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.catalog__button {
-  background-color: $program-item-bg;
-  color: $primary-color;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }
