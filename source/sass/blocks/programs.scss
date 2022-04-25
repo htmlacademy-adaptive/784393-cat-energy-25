@@ -182,14 +182,36 @@
 }
 
 .program__item-link {
+  position: relative;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   color: $secondary-color;
   line-height: 16px;
   text-transform: uppercase;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: -39px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/icons/icon-program-arrow.svg");
+  }
+
   @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      right: -49px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -54px;
+    }
   }
 }

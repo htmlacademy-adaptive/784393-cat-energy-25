@@ -17,6 +17,7 @@
   @include resseting-lists;
   display: grid;
   grid-template-columns: 1fr;
+  counter-reset: item-number;
 
   @media (min-width: $table-width) {
     grid-template-columns: 250px 250px;
@@ -35,6 +36,7 @@
   display: flex;
   align-items: center;
   min-height: 60px;
+  counter-increment: item-number;
 
   &::before {
     margin-right: 20px;
@@ -83,6 +85,18 @@
       width: 80px;
       height: 80px;
     }
+
+    &::after {
+      content: counter(item-number);
+      position: absolute;
+      top: -38px;
+      right: 25px;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $program-item-bg;
+      z-index: -1;
+    }
   }
 }
 
@@ -95,21 +109,5 @@
     font-size: 16px;
     line-height: 24px;
     min-width: 250px;
-  }
-}
-
-.info__item-number {
-  display: none;
-
-  @media (min-width: $table-width) {
-    display: block;
-    position: absolute;
-    top: -23px;
-    right: 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    color: $program-item-bg;
-    line-height: 250px;
-    z-index: -1;
   }
 }
