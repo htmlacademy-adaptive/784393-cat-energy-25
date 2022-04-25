@@ -107,11 +107,6 @@ a {
 .header::before {
   position: absolute;
   content: "";
-  width: 100%;
-  min-height: 315px;
-  top: 66px;
-  right: 0;
-  background-image: url("../img/index/intro-mobile-bg.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
