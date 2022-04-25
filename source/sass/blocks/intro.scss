@@ -2,6 +2,23 @@
   padding-top: 27px;
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      min-height: 315px;
+      right: 0;
+      top: 0;
+      background-image: url("../img/index/intro-mobile-bg.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+
   @media (min-width: $desktop-width) {
     padding-top: 32px;
   }
