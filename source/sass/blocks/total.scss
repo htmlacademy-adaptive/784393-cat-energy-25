@@ -19,7 +19,13 @@
     }
   }
 
+  @media (min-width: $table-width) {
+    background-image: linear-gradient( to bottom, $secondary-white 0 500px, $program-item-bg 500px 100% );
+  }
+
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient( to bottom, $secondary-white 0 180px, $program-item-bg 180px 100% );
+
     &::before {
       display: none;
     }
@@ -58,6 +64,10 @@
     line-height: 60px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .total__info {
@@ -74,16 +84,30 @@
 .total__items {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+
+  @media (min-width: $table-width) {
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .total__item {
-  margin-bottom: 20px;
-  width: 50%;
+  margin-bottom: 35px;
+  margin-right: 32px;
+  padding-top: 15px;
+  width: 124px;
   text-align: center;
+  border: 1px solid $rare-second-leght-gray;
+  border-radius: 3px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   @media (min-width: $table-width) {
+    margin-right: 42px;
     width: 162px;
   }
 
@@ -92,11 +116,8 @@
   }
 }
 
-.total__item-description {
-  display: block;
-}
-
 .total__item-quantity {
+  margin-bottom: 10px;
   display: block;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
@@ -107,9 +128,28 @@
   text-transform: uppercase;
 }
 
+.total__item-description {
+  margin: 0 auto;
+  margin-bottom: -22px;
+  display: block;
+  max-width: 87px;
+  background-color: $rare-gray;
+
+  @media (min-width: $table-width) {
+    margin-bottom: -8px;
+    max-width: 140px;
+    background-color: $secondary-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $program-item-bg;
+  }
+}
+
 .total__applied {
   margin: 0;
   margin-bottom: 40px;
+  width: 100%;
   flex-grow: 1;
   font-family: "Oswald", sans-serif;
   color: $secondary-color;
@@ -118,6 +158,7 @@
   text-transform: uppercase;
 
   @media (min-width: $table-width) {
+    margin-left: auto;
     max-width: 174px;
     font-size: 20px;
     line-height: 20px;

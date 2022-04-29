@@ -6,6 +6,13 @@
 .shop-address__container {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
 }
 
 .shop-address__detail {
@@ -22,6 +29,7 @@
     margin-left: 0;
     padding: 56px 80px;
     width: 565px;
+    background-color: $secondary-white;
   }
 }
 

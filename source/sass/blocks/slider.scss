@@ -6,6 +6,11 @@
 
 .slider__item {
   text-align: center;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 
   @media (min-width: $table-width) {
     margin-bottom: 29px;
@@ -24,7 +29,7 @@
   font-family: "Owald", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: $primary-color;
+  color: $secondary-color;
   line-height: 20px;
   text-transform: uppercase;
   background-color: transparent;
