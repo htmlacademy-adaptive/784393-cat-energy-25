@@ -12,8 +12,11 @@
   <header class="header header--another">
     <div class="header__container container">
       <a class="header__logo" href="./index.html">
-        <img class="header__logo-image header__logo-image--picture" width="34" height="38" src="./img/index/logo-mobile.png" alt="Логотип компании Кэт энерджи">
-        <img class="header__logo-image header__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1260px)" srcset="./img/index/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/index/logo-tablet.svg">
+          <img class="header__logo-image" width="191" height="38" src="./img/index/logo-mobile.svg" alt="Логотип компании Кэт энерджи">
+        </picture>
       </a>
       <button class="header__navigation-toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>

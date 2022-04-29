@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
   <base href="https://htmlacademy-adaptive.github.io/784393-cat-energy-25/10/">
@@ -12,8 +16,11 @@
   <header class="header">
     <div class="header__container container">
       <a class="header__logo" href="/">
-        <img class="header__logo-image header__logo-image--picture" width="34" height="38" src="./img/index/logo-mobile.png" alt="Логотип компании Кэт энерджи">
-        <img class="header__logo-image header__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1260px)" srcset="./img/index/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/index/logo-tablet.svg">
+          <img class="header__logo-image" width="191" height="38" src="./img/index/logo-mobile.svg" alt="Логотип компании Кэт энерджи">
+        </picture>
       </a>
       <button class="header__navigation-toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
@@ -40,8 +47,8 @@
         <h2 class="visually-hidden">Питание и программа.</h2>
         <p class="intro__title">Функциональное питание для котов</p>
         <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-        <div class="into__wrapper-image">
-          <img class="intro__image" src="img/index/intro-image.png" width="280" height="270" alt="Cat energy pro со вкусом купицы">
+        <div class="intro__wrapper-image">
+          <img class="intro__image" src="img/index/intro-image.png" width="552" height="499" alt="Cat energy pro со вкусом купицы">
         </div>
         <a class="intro__link button">Подобрать программу</a>
       </div>
@@ -104,7 +111,7 @@
         </div>
 
         <div class="total__changes slider">
-          <div class="slider__item">
+          <div class="slider__item slider__item--active">
             <img class="slider__image" width="280" height="232" src="./img/index/before-cat.png" alt="Кот до питания нашим кормом">
           </div>
           <div class="slider__item">
