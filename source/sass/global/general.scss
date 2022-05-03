@@ -13,8 +13,14 @@ body {
   font-size: 14px;
   color: $primary-color;
   line-height: 18px;
+  min-width: 320px;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }

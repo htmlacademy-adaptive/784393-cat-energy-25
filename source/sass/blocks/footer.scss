@@ -8,6 +8,8 @@
 }
 
 .footer__container {
+  padding-top: 39px;
+
   @media (min-width: $table-width) {
     padding-top: 58px;
     display: flex;

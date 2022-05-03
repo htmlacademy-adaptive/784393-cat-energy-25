@@ -1,0 +1,11 @@
+.map {
+  height: 362px;
+
+  @media (min-width: $table-width) {
+    height: 400px;
+  }
+}
+
+iframe {
+  display: block;
+}

@@ -11,10 +11,16 @@
   <header class="header header--another">
     <div class="header__container container">
       <a class="header__logo" href="./index.html" >
-        <img class="header__logo-image header__logo-image--picture" width="34" height="38" src="./img/index/logo-mobile.png" alt="Логотип компании Кэт энерджи">
-        <img class="header__logo-image header__logo-image--designation" width="108" height="18" src="./img/index/logo-description.svg" alt="Название компании Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1260px)" srcset="./img/index/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/index/logo-tablet.svg">
+          <img class="header__logo-image" width="191" height="38" src="./img/index/logo-mobile.svg" alt="Логотип компании Кэт энерджи">
+        </picture>
       </a>
-      <nav class="header__navigation">
+      <button class="header__navigation-toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <nav class="header__navigation  header__navigation--closed header__navigation--nojs">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-link  header__navigation-link--another" href="./index.html">Главная</a>
@@ -26,9 +32,6 @@
             <a class="header__navigation-link  header__navigation-link--another" href="./form.html">Подбор программы</a>
           </li>
         </ul>
-        <button class="header__navigation-toggle" type="button">
-          <span class="vissually-hidden">Открыть меню.</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -217,8 +220,8 @@
               <h3 class="additionally-product__subtitle">Сахарозаменитель</h3>
               <table class="additionally-product__table">
                 <tr class="additionally-product__table-row">
-                  <td class="additionally-product__table-data">1 упаковка (100 г)</td>
-                  <td class="additionally-product__table-data">200 Р.</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--title">1 упаковка (100 г)</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--meaning">200 Р.</td>
                 </tr>
               </table>
               <button class="additionally-product__button button" type="button">Заказать</button>
@@ -227,8 +230,8 @@
               <h3 class="additionally-product__subtitle">Питьевая вода</h3>
               <table class="additionally-product__table">
                 <tr class="additionally-product__table-row">
-                  <td class="additionally-product__table-data">5 литров</td>
-                  <td class="additionally-product__table-data">50 Р.</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--title">5 литров</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--meaning">50 Р.</td>
                 </tr>
               </table>
               <button class="additionally-product__button button" type="button">Заказать</button>
@@ -237,8 +240,8 @@
               <h3 class="additionally-product__subtitle">Молоко</h3>
               <table class="additionally-product__table">
                 <tr class="additionally-product__table-row">
-                  <td class="additionally-product__table-data">1 литр</td>
-                  <td class="additionally-product__table-data">100 Р.</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--title">1 литр</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--meaning">100 Р.</td>
                 </tr>
               </table>
               <button class="additionally-product__button button" type="button">Заказать</button>
@@ -247,8 +250,8 @@
               <h3 class="additionally-product__subtitle">Витамины</h3>
               <table class="additionally-product__table">
                 <tr class="additionally-product__table-row">
-                  <td class="additionally-product__table-data">1 упаковка (30 г)</td>
-                  <td class="additionally-product__table-data">300 Р.</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--title">1 упаковка (30 г)</td>
+                  <td class="additionally-product__table-data additionally-product__table-data--meaning">300 Р.</td>
                 </tr>
               </table>
               <button class="additionally-product__button button" type="button">Заказать</button>
@@ -264,13 +267,21 @@
   <footer class="footer">
     <section class="shop-address">
       <h2 class="visually-hidden">Адрес нашего магазина.</h2>
-      <div class="container">
+      <div class="shop-address__container container">
         <div class="shop-address__detail">
           <p class="shop-address__info">приглашаем к сотрудничеству дилеров!</p>
           <p class="shop-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.13423005763!2d30.321452728854307!3d59.93932495769428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650621175339!5m2!1sru!2sru"
+          width="100%"
+          height="100%" style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
     <div class="footer__container container">
       <a class="footer__logo" href="/" >
@@ -303,5 +314,6 @@
       </div>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

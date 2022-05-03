@@ -21,8 +21,19 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1220px;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.form__section-programm {
+  border-top: 1px solid $decorate-line;
+  border-bottom: 1px solid $decorate-line;
+
+  @media (min-width: $table-width) {
+    border: none;
   }
 }
 
@@ -94,19 +105,38 @@
   @media (min-width: $table-width) {
     margin-bottom: 71px;
     padding-top: 25px;
+    padding-left: 28px;
     padding-bottom: 25px;
+    border: 1px solid $input-border-color;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 29px;
     padding-right: 28px;
+    padding-bottom: 29px;
     padding-left: 28px;
     width: 570px;
   }
 }
 
 .form__programm-label {
+  margin-right: 45px;
   margin-bottom: 19px;
+  padding-left: 45px;
+  position: relative;
   display: block;
+  min-height: 30px;
+  cursor: pointer;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+    padding-left: 60px;
+    min-height: 40px;
+  }
 }
 
 .form__programm-radio {
@@ -117,7 +147,46 @@
   }
 }
 
+.form__programm-mark {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -7px;
+  left: 0;
+  border: 1px solid $rare-second-leght-gray;
+  border-radius: 50%;
+
+  @media (min-width: $table-width) {
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__programm-radio[type="radio"]:checked + .form__programm-mark::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 7px;
+  right: 7px;
+  background-color: $second-element-bg;
+  border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
 .form__programm-name {
+  display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -126,6 +195,31 @@
   @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+  }
+}
+
+.form__section-contact {
+  padding-top: 26px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 40px;
+    left: 0;
+    background-color: $second-element-bg;
+  }
+
+  @media (min-width: $table-width) {
+    &::before {
+      top: 47px;
+    }
   }
 }
 
@@ -148,12 +242,25 @@
 
 .form__contact-subtitle {
   margin-bottom: 35px;
+  margin-left: -23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  position: relative;
+  display: inline-block;
+  background-color: $secondary-white;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 228px;
+  }
+
   @media (min-width: $table-width) {
+    margin-left: -42px;
+    padding-left: 42px;
+    padding-right: 42px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -165,8 +272,33 @@
 
 .form__contact-label {
   margin-bottom: 15px;
+  position: relative;
   display: flex;
   align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--email {
+    &::before {
+      background-image: url("../img/icons/icon-email.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("../img/icons/icon-phone.svg");
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
@@ -213,6 +345,26 @@
   }
 }
 
+.form__section-comment {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 15px;
+    left: 0;
+    background-color: $second-element-bg;
+  }
+
+  @media (min-width: $table-width) {
+    &::before {
+      top: 21px;
+    }
+  }
+}
+
 .form__сomment {
   margin: 0;
   padding: 0;
@@ -226,14 +378,22 @@
 
 .form__comment-subtitle {
   margin-bottom: 37px;
-  padding: 0;
+  margin-left: -23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  position: relative;
+  display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
+  background-color: $secondary-white;
 
   @media (min-width: $table-width) {
     margin-bottom: 76px;
+    margin-left: -42px;
+    padding-left: 42px;
+    padding-right: 42px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -264,6 +424,26 @@
   }
 }
 
+.form__section-additionally {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 15px;
+    left: 0;
+    background-color: $second-element-bg;
+  }
+
+  @media (min-width: $table-width) {
+    &::before {
+      top: 21px;
+    }
+  }
+}
+
 .form__additionally {
   margin: 0;
   padding: 0;
@@ -285,10 +465,15 @@
 
 .form__additionally-subtitle {
   margin-bottom: 34px;
+  margin-left: -23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
+  background-color: $secondary-white;
 
   @media (min-width: $table-width) {
     margin-bottom: 57px;
@@ -305,8 +490,36 @@
   }
 }
 
+.form__additionally-mark {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -6px;
+  left: 0;
+  border: 1px solid $rare-second-leght-gray;
+
+  @media (min-width: $table-width) {
+    top: 0;
+  }
+}
+
+.form__additionally-input[type="checkbox"]:checked + .form__additionally-mark::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icons/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .form__additionally-label {
-  margin-bottom: 13px;
+  padding-left: 45px;
+  margin-bottom: 26px;
+  position: relative;
   display: block;
 
   &:last-child {

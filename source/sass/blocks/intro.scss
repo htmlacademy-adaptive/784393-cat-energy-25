@@ -2,6 +2,23 @@
   padding-top: 27px;
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      min-height: 315px;
+      right: 0;
+      top: 0;
+      background-image: url("../img/index/intro-mobile-bg.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+
   @media (min-width: $desktop-width) {
     padding-top: 32px;
   }
@@ -13,7 +30,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    height: 696px;
+    height: 540px;
   }
 }
 
@@ -64,7 +81,7 @@
   }
 }
 
-.into__wrapper-image {
+.intro__wrapper-image {
   margin: 0 auto;
   width: 280px;
 
@@ -77,19 +94,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin: 0;
+    margin-right: 80px;
     top: 0;
   }
 }
 
 .intro__image {
   display: block;
-  height: auto;
-  width: 100%;
-
-  @media (min-width: $table-width) {
-    padding-right: 100px;
-  }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
@@ -99,10 +111,14 @@
 .intro__link {
   padding-right: 10px;
   padding-left: 10px;
-  display: block;
   text-align: center;
 
+
   @media (min-width: $table-width) {
+    padding: 14px 26px;
+    max-width: 305px;
+    font-size: 20px;
+    line-height: 20px;
     z-index: 1;
   }
 
@@ -110,6 +126,5 @@
     padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
-    max-width: 304px;
   }
 }
