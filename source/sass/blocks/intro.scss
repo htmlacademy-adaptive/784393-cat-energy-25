@@ -103,8 +103,14 @@
 .intro__image {
   display: block;
 
+  @media (min-width: $table-width) {
+    width: 709px;
+    height: 609px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    width: 552px;
+    height: 499px;
   }
 }
 

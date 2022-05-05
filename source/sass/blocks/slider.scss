@@ -1,6 +1,15 @@
 .slider {
+  @media (min-width: $table-width) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 592px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 600px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -14,6 +23,14 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 29px;
+    display: block;
+  }
+}
+
+.slider__image {
+  @media (min-width: $table-width) {
+    width: 296px;
+    height: 511px;
   }
 }
 
@@ -21,7 +38,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 210px;
+  flex-grow: 1;
 }
 
 .slider__button {
