@@ -46,13 +46,13 @@
   color: $secondary-color;
 
   @media (min-width: $table-width) {
-    margin-bottom: 82px;
+    margin-bottom: 150px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 150px;
   }
 }
 
@@ -65,13 +65,13 @@
     display: grid;
     grid-template-columns: 320px 320px;
     column-gap: 60px;
-    row-gap: 60px;
+    row-gap: 145px;
     max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 145px;
   }
 }

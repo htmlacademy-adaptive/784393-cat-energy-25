@@ -33,11 +33,13 @@
   }
 
   @media (min-width: $table-width) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 39px;
     background-color: $program-item-bg;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
     text-align: center;
 
     &::before {
@@ -65,13 +67,41 @@
 }
 
 .product-details__wrapper {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50%;
 
   @media (min-width: $table-width) {
+    margin-bottom: -85px;
+    top: -95px;
     justify-content: center;
     width: 100%;
+  }
+}
+
+.product-details__image {
+  &--big {
+    width: 84px;
+    height: 101px;
+  }
+
+  @media (min-width: $table-width) {
+    width: 161px;
+    height: 172px;
+
+    &--big {
+      width: 168px;
+      height: 207px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
+      width: 172px;
+      height: 202px;
+    }
   }
 }
 
@@ -80,6 +110,7 @@
   width: 50%;
 
   @media (min-width: $table-width) {
+    margin-bottom: 0;
     width: 100%;
   }
 }
@@ -100,6 +131,16 @@
   }
 }
 
+.product-details__title-decor {
+  @media (min-width: $table-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .product-details__table {
   width: 100%;
 
@@ -108,12 +149,43 @@
   }
 }
 
+.product-details__table-row {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $rare-second-leght-gray;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .product-details__table-data {
   font-size: 12px;
   line-height: 16px;
 
+  &--meaning {
+    text-align: right;
+  }
+
   @media (min-width: $table-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
     font-size: 16px;
+    text-align: left;
+
+    &--meaning {
+      text-align: right;
+    }
   }
 }
 
@@ -169,6 +241,5 @@
 
   @media (min-width: $table-width) {
     margin-right: auto;
-    margin-top: auto;
   }
 }
