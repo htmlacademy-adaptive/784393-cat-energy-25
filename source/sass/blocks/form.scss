@@ -83,6 +83,18 @@
     text-transform: uppercase;
   }
 
+  &:hover {
+    border-color: $rare-second-leght-gray;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:invalid {
+    border-color: $error-color;
+  }
+
   @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 30px;

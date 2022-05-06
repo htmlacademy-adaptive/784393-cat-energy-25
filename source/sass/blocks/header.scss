@@ -36,6 +36,10 @@
       top: 0;
       right: 0;
       background-image: url("../img/index/intro-decstop-bg.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/intro-decstop-bg@2x.png");
+      }
     }
   }
 }
@@ -211,6 +215,14 @@
   font-size: 20px;
   line-height: 20px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $mobile-width-only) {
     padding-top: 22px;
     padding-bottom: 24px;
@@ -241,6 +253,11 @@
     font-weight: 400;
 
     &--active {
+      &:hover,
+      &:active {
+        opacity: 1;
+      }
+
       &::before {
         background-color: $secondary-white;
       }

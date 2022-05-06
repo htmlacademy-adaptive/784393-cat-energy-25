@@ -237,6 +237,14 @@
   &--more {
     background-color: $program-item-bg;
     color: $primary-color;
+
+    &:hover {
+      background-color: $effect-bg;
+    }
+
+    &:active {
+      color: $effect-hover-color;
+    }
   }
 
   @media (min-width: $table-width) {
