@@ -1,11 +1,34 @@
 .additionally {
   padding-top: 25px;
   padding-bottom: 35px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $second-element-bg;
+  }
+
+  @media (min-width: $table-width) {
+    &::before {
+      top: 48px;
+    }
+  }
 }
 
 .additionally__title {
   margin: 0;
   margin-bottom: 36px;
+  margin-left: -22px;
+  padding-right: 22px;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  background-color: $secondary-white;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -15,12 +38,17 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 80px;
+    margin-left: 0;
+    padding-left: 36px;
+    padding-right: 36px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
+    margin-left: -40px;
+    padding-right: 35px;
   }
 }
 
@@ -145,10 +173,14 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../img/index/additionally-bg-mobile.png");
+    background-image: url("../img/catalog/additionally-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: 0;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/additionally-bg-mobile@2x.png");
+    }
   }
 
   &::after {
@@ -171,6 +203,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    &::before {
+      background-position: 0 -310px;
+    }
+
     &::after {
       margin-bottom: 0;
     }
@@ -185,6 +221,15 @@
     justify-content: start;
     align-items: center;
     width: 245px;
+
+    &::before {
+      background-position: 0;
+      background-image: url("../img/catalog/additionally-bg-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/additionally-bg-desktop@2x.png");
+      }
+    }
 
     &::after {
       margin-bottom: 46px;

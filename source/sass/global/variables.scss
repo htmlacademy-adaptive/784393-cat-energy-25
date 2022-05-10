@@ -13,6 +13,11 @@ $second-element-bg: #68b738;
 $rare-second-gray: #e6e6e6;
 $rare-second-leght-gray: #cdcdcd;
 $decorate-line: #d9d9d9;
+$effect-color: #5eaa2f;
+$efferct-opacity: rgba(255, 255, 255, 0.3);
+$effect-bg: #ebebeb;
+$effect-hover-color: rgba(68, 68, 68, 0.3);
+$error-color: #ff8282;
 
 // Примеси
 @mixin resseting-lists ($margin-reset: 0, $padding-reset: 0, $list-style: none) {
