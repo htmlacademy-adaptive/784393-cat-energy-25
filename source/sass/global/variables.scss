@@ -18,6 +18,12 @@ $efferct-opacity: rgba(255, 255, 255, 0.3);
 $effect-bg: #ebebeb;
 $effect-hover-color: rgba(68, 68, 68, 0.3);
 $error-color: #ff8282;
+$effect-hover-input: #bababa;
+$background-slider: #dcdcdc;
+$toggle-shadow: rgba(0, 0, 0, 0.16);
+$toggle-shadow-hover: rgba(0, 0, 0, 0.19);
+$toggle-shadow-active: rgba(0, 0, 0, 0.2);
+$social-icon-color: #666666;
 
 // Примеси
 @mixin resseting-lists ($margin-reset: 0, $padding-reset: 0, $list-style: none) {

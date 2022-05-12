@@ -19,7 +19,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 52px;
+  margin-bottom: 32px;
   display: block;
   text-align: center;
 
@@ -28,15 +28,54 @@
   }
 }
 
+.footer__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__social-list {
   @include resseting-lists;
-  margin: 0 auto 43px;
-  width: 132px;
+  margin: 0 auto 23px;
+  padding: 20px 74px;
+  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $decorate-line;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $decorate-line;
+  }
 
   @media (min-width: $table-width) {
     margin: 0;
+    width: 131px;
+    padding: 0;
+
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -48,34 +87,18 @@
   width: 28px;
   height: 22px;
   text-decoration: none;
+}
 
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 28px;
-    height: 28px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.footer__social-icon {
+  fill: $social-icon-color;
+}
 
-  &--vk {
-    &::before {
-      background-image: url("../img/icons/icon-vkontakte.svg");
-    }
-  }
+.footer__social-link:hover .footer__social-icon {
+  fill: $second-element-bg;
+}
 
-  &--youtube {
-    &::before {
-      background-image: url("../img/icons/icon-youtube.svg");
-    }
-  }
-
-  &--telegram {
-    &::before {
-      background-image: url("../img/icons/icon-telegram.svg");
-    }
-  }
+.footer__social-link:active .footer__social-icon {
+  opacity: 0.6;
 }
 
 .footer__copyright {
@@ -90,16 +113,32 @@
   }
 }
 
+.footer__copyright-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__copyright-link:hover .footer__copyright-icon {
+  fill: $second-element-bg;
+}
+
+.footer__copyright-link:active {
+  opacity: 0.3;
+}
+
 .footer__copyright-info {
   margin: 0;
+  font-size: 16px;
 
   @media (min-width: $table-width) {
-    font-size: 16px;
+    margin-right: 22px;
   }
 }
 
-.footer__copyright-link {
-  @media (min-width: $table-width) {
-    margin-left: 22px;
-  }
+.footer__copyright-icon {
+  fill: $social-icon-color;
 }
