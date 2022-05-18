@@ -67,11 +67,12 @@
   }
 
   @media (min-width: $table-width) {
-    padding: 71px 62px 53px 52px;
+    margin-bottom: 30px;
+    padding: 76px 62px 57px 52px;
 
     &::after {
       top: 92px;
-      left: 440px;
+      left: 448px;
       width: 200px;
       height: 200px;
     }
@@ -80,8 +81,8 @@
       &::before {
         width: 140px;
         height: 194px;
-        top: 81px;
-        left: 470px;
+        top: 80px;
+        left: 477px;
         background-image: url("../img/index/program-table-cat-slim.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -92,8 +93,8 @@
       &::before {
         width: 268px;
         height: 112px;
-        top: 130px;
-        left: 404px;
+        top: 135px;
+        left: 414px;
         background-image: url("../img/index/program-table-cat-pro.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -156,7 +157,7 @@
   }
 
   @media (min-width: $table-width) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -174,7 +175,7 @@
   margin-bottom: 43px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
