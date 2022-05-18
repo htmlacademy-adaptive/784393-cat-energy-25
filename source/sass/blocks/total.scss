@@ -1,6 +1,6 @@
 .total {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   background-color: $rare-gray;
 
   @media (min-width: $table-width) {
@@ -58,7 +58,7 @@
   font-weight: 400;
   color: $secondary-color;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $table-width) {
     margin-bottom: 63px;
@@ -74,7 +74,7 @@
 
 .total__info {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $table-width) {
     margin-bottom: 54px;
@@ -88,7 +88,6 @@
 }
 
 .total__items {
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -106,7 +105,7 @@
 .total__item {
   margin-bottom: 35px;
   margin-right: 32px;
-  padding-top: 15px;
+  padding-top: 12px;
   width: 124px;
   text-align: center;
   border: 1px solid $rare-second-leght-gray;
@@ -127,7 +126,7 @@
 }
 
 .total__item-quantity {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   display: block;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
@@ -140,9 +139,10 @@
 
 .total__item-description {
   margin: 0 auto;
-  margin-bottom: -22px;
+  margin-bottom: -17px;
   display: block;
   max-width: 87px;
+  line-height: 14px;
   background-color: $rare-gray;
 
   @media (min-width: $table-width) {
