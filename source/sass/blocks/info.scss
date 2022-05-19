@@ -1,16 +1,27 @@
 .info {
-  padding-top: 20px;
-  padding-bottom: 49px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+
+  @media (min-width: $table-width) {
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
 }
 
 .info__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: $secondary-color;
   line-height: 40px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 71px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .info__list {
@@ -21,7 +32,8 @@
 
   @media (min-width: $table-width) {
     grid-template-columns: 250px 250px;
-    column-gap: 209px;
+    column-gap: 135px;
+    row-gap: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,25 +65,25 @@
 
   &--leaf {
     &::before {
-      background-image: url("../img/icons/icon-leaf.svg");
+      background-image: url("../img/index/icon-leaf.svg");
     }
   }
 
   &--tub {
     &::before {
-      background-image: url("../img/icons/icon-tub.svg");
+      background-image: url("../img/index/icon-tub.svg");
     }
   }
 
   &--eat {
     &::before {
-      background-image: url("../img/icons/icon-eat.svg");
+      background-image: url("../img/index/icon-eat.svg");
     }
   }
 
   &--alarm {
     &::before {
-      background-image: url("../img/icons/icon-alarm.svg");
+      background-image: url("../img/index/icon-alarm.svg");
     }
   }
 
@@ -81,7 +93,7 @@
 
     &::before {
       margin-right: auto;
-      margin-bottom: 31px;
+      margin-bottom: 33px;
       width: 80px;
       height: 80px;
     }
@@ -89,13 +101,19 @@
     &::after {
       content: counter(item-number);
       position: absolute;
-      top: -38px;
-      right: 25px;
+      top: -40px;
+      right: 2px;
       font-family: "Oswald", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: $program-item-bg;
       z-index: -1;
+    }
+
+    &--leaf {
+      &::after {
+        right: 26px;
+      }
     }
   }
 }
@@ -104,7 +122,6 @@
   margin: 0;
 
   @media (min-width: $table-width) {
-    margin-right: auto;
     font-size: 16px;
     line-height: 24px;
     min-width: 250px;

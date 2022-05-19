@@ -1,5 +1,5 @@
 .programs {
-  padding-top: 20px;
+  padding-top: 23px;
 
   @media (min-width: $desktop-width) {
     padding-top: 81px;
@@ -21,6 +21,10 @@
   position: relative;
   background-color: $program-item-bg;
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -41,8 +45,8 @@
 
   &--pro {
     &::before {
-      left: 16px;
-      top: 32px;
+      left: 13px;
+      top: 34px;
       width: 67px;
       height: 28px;
       background-image: url("../img/index/program-cat-pro.svg");
@@ -63,11 +67,12 @@
   }
 
   @media (min-width: $table-width) {
-    padding: 71px 62px 53px 52px;
+    margin-bottom: 30px;
+    padding: 76px 62px 57px 52px;
 
     &::after {
       top: 92px;
-      left: 440px;
+      left: 448px;
       width: 200px;
       height: 200px;
     }
@@ -76,8 +81,8 @@
       &::before {
         width: 140px;
         height: 194px;
-        top: 81px;
-        left: 470px;
+        top: 80px;
+        left: 477px;
         background-image: url("../img/index/program-table-cat-slim.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -88,8 +93,8 @@
       &::before {
         width: 268px;
         height: 112px;
-        top: 130px;
-        left: 404px;
+        top: 135px;
+        left: 414px;
         background-image: url("../img/index/program-table-cat-pro.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -136,8 +141,8 @@
 
 .program__item-title {
   margin: 0;
-  margin-bottom: 29px;
-  padding-left: 30px;
+  margin-bottom: 30px;
+  padding-left: 25px;
   padding-top: 7px;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
@@ -148,11 +153,11 @@
   text-transform: uppercase;
 
   &--pro {
-    padding-left: 55px;
+    padding-left: 51px;
   }
 
   @media (min-width: $table-width) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -167,10 +172,10 @@
 
 .program__item-info {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 43px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
@@ -195,13 +200,13 @@
     content: "";
     width: 24px;
     height: 12px;
-    background-image: url("../img/icons/icon-program-arrow.svg");
+    background-image: url("../img/index/icon-program-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &:hover::after {
-    background-image: url("../img/icons/icon-program-hover-arrow.svg");
+    background-image: url("../img/index/icon-program-hover-arrow.svg");
     width: 32px;
   }
 

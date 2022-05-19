@@ -7,7 +7,7 @@
       position: absolute;
       content: "";
       width: 100%;
-      min-height: 315px;
+      min-height: 302px;
       right: 0;
       top: 0;
       background-image: url("../img/index/intro-mobile-bg.png");
@@ -33,6 +33,10 @@
   flex-direction: column;
   flex-wrap: wrap;
 
+  @media (min-width: $table-width) {
+
+  }
+
   @media (min-width: $desktop-width) {
     height: 540px;
   }
@@ -48,8 +52,10 @@
   text-align: center;
 
   @media (min-width: $table-width) {
-    margin-bottom: 41px;
-    padding-right: 100px;
+    margin-bottom: 42px;
+    padding-top: 18px;
+    padding-right: 140px;
+    padding-left: 88px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -65,14 +71,15 @@
 
 .intro__subtitle {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: $secondary-white;
 
   @media (min-width: $table-width) {
-    margin-bottom: 49px;
+    margin-bottom: 48px;
+    padding-left: 90px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
@@ -87,13 +94,14 @@
 
 .intro__wrapper-image {
   margin: 0 auto;
+  margin-bottom: 3px;
   width: 280px;
 
   @media (min-width: $table-width) {
-    margin-bottom: -75px;
+    margin-bottom: -105px;
     order: 2;
     position: relative;
-    top: -75px;
+    top: -83px;
     width: 710px;
   }
 
@@ -123,10 +131,10 @@
   padding-left: 10px;
   text-align: center;
 
-
   @media (min-width: $table-width) {
-    padding: 14px 26px;
-    max-width: 305px;
+    margin-left: 90px;
+    padding: 17px 26px;
+    max-width: 245px;
     font-size: 20px;
     line-height: 20px;
     z-index: 1;

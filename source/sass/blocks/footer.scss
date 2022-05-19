@@ -11,7 +11,7 @@
   padding-top: 39px;
 
   @media (min-width: $table-width) {
-    padding-top: 58px;
+    padding-top: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   display: block;
   text-align: center;
 
@@ -60,7 +60,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -135,7 +135,7 @@
   font-size: 16px;
 
   @media (min-width: $table-width) {
-    margin-right: 22px;
+    margin-right: 24px;
   }
 }
 

@@ -14,6 +14,7 @@
 }
 
 .slider__item {
+  margin-bottom: 15px;
   text-align: center;
   display: none;
 
@@ -22,7 +23,7 @@
   }
 
   @media (min-width: $table-width) {
-    margin-bottom: 29px;
+    margin-bottom: 26px;
     display: block;
   }
 }
@@ -39,13 +40,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
+  width: 200px;
+
+  @media (min-width: $table-width) {
+    width: 591px;
+  }
 }
 
 .slider__button {
   padding: 0;
   position: relative;
-  font-family: "Owald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: $secondary-color;
@@ -56,6 +61,11 @@
   cursor: pointer;
 
   @media (min-width: $table-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 30px;
+
     &::before {
       position: absolute;
       content: "";
@@ -86,6 +96,8 @@
   border-radius: 6px;
 
   @media (min-width: $table-width) {
+    margin-left: 10px;
+    margin-right: 10px;
     width: 426px;
     height: 6px;
     background-color: $background-slider;
@@ -113,8 +125,8 @@
     height: 34px;
     width: 34px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 51%;
+    transform: translate(-52%, -50%);
     background-color: $secondary-white;
     border: 1px solid $rare-second-leght-gray;
     border-radius: 50%;

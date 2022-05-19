@@ -1,10 +1,11 @@
 .total {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   background-color: $rare-gray;
 
   @media (min-width: $table-width) {
     padding-top: 43px;
+    padding-bottom: 60px;
     position: relative;
     background-color: $secondary-white;
 
@@ -20,7 +21,7 @@
   }
 
   @media (min-width: $table-width) {
-    background-image: linear-gradient(to bottom, $secondary-white 0 500px, $program-item-bg 500px 100%);
+    background-image: linear-gradient(to bottom, $secondary-white 0 600px, $program-item-bg 600px 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -58,10 +59,10 @@
   font-weight: 400;
   color: $secondary-color;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $table-width) {
-    margin-bottom: 63px;
+    margin-bottom: 66px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -74,10 +75,10 @@
 
 .total__info {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -88,12 +89,12 @@
 }
 
 .total__items {
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
   @media (min-width: $table-width) {
+    margin-bottom: 51px;
     justify-content: flex-start;
     align-items: center;
   }
@@ -106,7 +107,7 @@
 .total__item {
   margin-bottom: 35px;
   margin-right: 32px;
-  padding-top: 15px;
+  padding-top: 12px;
   width: 124px;
   text-align: center;
   border: 1px solid $rare-second-leght-gray;
@@ -118,6 +119,7 @@
 
   @media (min-width: $table-width) {
     margin-right: 42px;
+    padding-top: 15px;
     width: 162px;
   }
 
@@ -127,7 +129,7 @@
 }
 
 .total__item-quantity {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   display: block;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
@@ -136,19 +138,30 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .total__item-description {
   margin: 0 auto;
-  margin-bottom: -22px;
+  margin-bottom: -17px;
   display: block;
   max-width: 87px;
+  line-height: 14px;
   background-color: $rare-gray;
 
   @media (min-width: $table-width) {
     margin-bottom: -8px;
     max-width: 140px;
     background-color: $secondary-white;
+
+    &--less {
+      max-width: 115px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -169,7 +182,10 @@
 
   @media (min-width: $table-width) {
     margin-left: auto;
-    max-width: 174px;
+    padding-right: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
@@ -183,7 +199,19 @@
 }
 
 .total__applied-info {
+  @media (min-width: $table-width) {
+    margin-top: 6px;
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 63px;
+  }
+}
+
+.total__applied-price {
+  @media (min-width: $table-width) {
+    margin-top: 8px;
+    display: block;
   }
 }
