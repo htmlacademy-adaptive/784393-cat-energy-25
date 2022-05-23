@@ -1,5 +1,5 @@
 .header {
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 14px;
   background-color: $secondary-white;
   position: relative;
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $table-width) {
-    padding-top: 22px;
+    padding-top: 24px;
 
     &::before {
       background-image: none;
@@ -33,7 +33,7 @@
 
     &::before {
       width: 50%;
-      min-height: 700px;
+      min-height: 694px;
       top: 0;
       right: 0;
       background-image: url("../img/index/intro-decstop-bg.png");
@@ -123,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 482px;
+    width: 500px;
     background-color: transparent;
   }
 }
@@ -191,6 +191,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
 }
 
 .header__navigation-item {
@@ -218,6 +222,10 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 33px;
   }
 }
 
@@ -253,7 +261,7 @@
         position: absolute;
         content: "";
         left: 0;
-        bottom: -9px;
+        bottom: -7px;
         width: 100%;
         height: 2px;
         background-color: $second-element-bg;
@@ -266,6 +274,7 @@
     line-height: 30px;
     color: $secondary-white;
     font-weight: 400;
+    letter-spacing: 0.1px;
 
     &--active {
       &:hover,
@@ -275,6 +284,8 @@
 
       &::before {
         background-color: $secondary-white;
+        left: -1px;
+        bottom: -7px;
       }
     }
 

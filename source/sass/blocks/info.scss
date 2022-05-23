@@ -6,6 +6,11 @@
     padding-top: 47px;
     padding-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+    padding-bottom: 10px;
+  }
 }
 
 .info__title {
@@ -38,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 250px);
-    column-gap: 73px;
+    column-gap: 75px;
   }
 }
 
@@ -115,6 +120,10 @@
         right: 26px;
       }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
