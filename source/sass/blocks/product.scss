@@ -1,12 +1,12 @@
 .product-details {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding: 5px 20px 8px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 
   &--more {
-    padding-top: 27px;
+    padding-top: 25px;
     justify-content: center;
     text-align: center;
 
@@ -55,7 +55,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding-top: 51px;
+        padding-top: 46px;
       }
     }
   }
@@ -92,16 +92,20 @@
 }
 
 .product-details__image {
+  margin-top: 24px;
+
   &--medium {
     margin-top: 4px;
   }
 
   &--big {
+    margin-top: 12px;
     width: 84px;
     height: 101px;
   }
 
   @media (min-width: $table-width) {
+    margin-top: -1px;
     width: 161px;
     height: 172px;
 
@@ -110,6 +114,7 @@
     }
 
     &--big {
+      margin-top: 0;
       width: 168px;
       height: 207px;
     }
@@ -125,7 +130,7 @@
 
 .product-details__info {
   margin-bottom: 19px;
-  padding-top: 6px;
+  padding-top: 7px;
   width: 140px;
 
   @media (min-width: $table-width) {
@@ -135,12 +140,12 @@
 }
 
 .product-details__title {
-  margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   padding-top: 10px;
   padding-right: 50px;
+  padding-bottom: 2px;
+  display: block;
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
@@ -148,14 +153,17 @@
   color: $secondary-dark;
 
   @media (min-width: $table-width) {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     padding-right: 0;
+    padding-bottom: 3px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+    padding-left: 3px;
   }
 }
 
@@ -167,6 +175,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -4px;
+    padding-left: 9px;
     display: block;
   }
 }
@@ -288,10 +297,12 @@
 }
 
 .product-details__button {
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
-  margin-left: auto;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
 
   &--more {
     background-color: $program-item-bg;
@@ -304,10 +315,5 @@
     &:active {
       color: $effect-hover-color;
     }
-  }
-
-  @media (min-width: $table-width) {
-    margin-top: auto;
-    margin-right: auto;
   }
 }

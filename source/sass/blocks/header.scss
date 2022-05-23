@@ -37,6 +37,7 @@
       top: 0;
       right: 0;
       background-image: url("../img/index/intro-decstop-bg.png");
+      background-color: $secondary-gray;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index/intro-decstop-bg@2x.png");
@@ -261,7 +262,7 @@
         position: absolute;
         content: "";
         left: 0;
-        bottom: -7px;
+        bottom: -9px;
         width: 100%;
         height: 2px;
         background-color: $second-element-bg;

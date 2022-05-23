@@ -439,6 +439,11 @@
   }
 }
 
+.form__contact-input:invalid ~ .form__contact-icon {
+  stroke: $error-color;
+  fill: $error-color;
+}
+
 .form__contact-icon {
   position: absolute;
   content: "";

@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $table-width) {
-    background-image: linear-gradient(to bottom, $secondary-white 0 600px, $program-item-bg 600px 100%);
+    background-image: linear-gradient(to bottom, $secondary-white 0 619px, $program-item-bg 619px 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +63,7 @@
   text-align: left;
 
   @media (min-width: $table-width) {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -80,12 +80,14 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 52px;
+    padding-right: 20px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    padding-right: 0;
   }
 }
 

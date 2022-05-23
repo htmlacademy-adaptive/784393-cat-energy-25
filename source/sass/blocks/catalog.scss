@@ -66,13 +66,13 @@
     display: grid;
     grid-template-columns: 325px 325px;
     column-gap: 60px;
-    row-gap: 142px;
+    row-gap: 141px;
     max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 143px;
+    row-gap: 147px;
   }
 }
