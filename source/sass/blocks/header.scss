@@ -37,7 +37,7 @@
       top: 0;
       right: 0;
       background-image: url("../img/index/intro-decstop-bg.png");
-      background-color: $secondary-gray;
+      background-color: $second-element-bg;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index/intro-decstop-bg@2x.png");
@@ -137,6 +137,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 
   &::before {
     content: "";
