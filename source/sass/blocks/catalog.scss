@@ -1,12 +1,12 @@
 .catalog {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 
   @media (min-width: $table-width) {
-    padding-top: 64px;
+    padding-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 58px;
   }
 }
 
@@ -46,13 +46,14 @@
   color: $secondary-color;
 
   @media (min-width: $table-width) {
-    margin-bottom: 150px;
+    margin-bottom: 162px;
+    padding-left: 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 150px;
+    margin-bottom: 165px;
   }
 }
 
@@ -63,15 +64,15 @@
 
   @media (min-width: $table-width) {
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 325px 325px;
     column-gap: 60px;
-    row-gap: 145px;
+    row-gap: 141px;
     max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 145px;
+    row-gap: 147px;
   }
 }

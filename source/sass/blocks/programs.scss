@@ -2,7 +2,7 @@
   padding-top: 23px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 81px;
+    padding-top: 74px;
   }
 }
 
@@ -68,7 +68,7 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 30px;
-    padding: 76px 62px 57px 52px;
+    padding: 76px 62px 57px 53px;
 
     &::after {
       top: 92px;
@@ -103,8 +103,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 51px 55px 52px;
+    padding: 77px 51px 58px 52px;
     width: 570px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
 
     &::after {
       width: 100px;
@@ -115,8 +119,8 @@
 
     &--slim {
       &::before {
-        top: 40px;
-        left: 65px;
+        top: 41px;
+        left: 68px;
         height: 97px;
         width: 70px;
         background-image: url("../img/index/program-decstop-slim.svg");
@@ -127,8 +131,8 @@
 
     &--pro {
       &::before {
-        top: 65px;
-        left: 33px;
+        top: 67px;
+        left: 34px;
         height: 56px;
         width: 134px;
         background-image: url("../img/index/program-decstop-pro.svg");
@@ -165,23 +169,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 75px;
+    padding-left: 22px;
     text-align: center;
+
+    &--pro {
+      padding-left: 63px;
+    }
   }
 }
 
 .program__item-info {
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 37px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
     max-width: 100%;
   }
 }
@@ -199,7 +209,7 @@
     margin-left: 17px;
     content: "";
     width: 24px;
-    height: 12px;
+    height: 24px;
     background-image: url("../img/index/icon-program-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;

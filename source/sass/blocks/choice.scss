@@ -1,6 +1,14 @@
 .choice {
   padding-top: 27px;
   padding-bottom: 32px;
+
+  @media (min-width: $table-width) {
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 44px;
+  }
 }
 
 .choice__title {
@@ -14,13 +22,15 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 54px;
+    padding-left: 40px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 73px;
-    margin-bottom: 54px;
+    margin-bottom: 57px;
+    padding-top: 9px;
+    padding-left: 0;
     font-size: 60px;
     line-height: 60px;
   }

@@ -10,6 +10,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
     margin-left: auto;
+    padding-top: 7px;
   }
 }
 
@@ -86,6 +87,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--before {
+      padding-left: 13px;
+    }
+
+    &--after {
+      padding-right: 7px;
+    }
+  }
 }
 
 .slider__toggle-wrapper {
@@ -152,5 +163,9 @@
       border-color: $second-element-bg;
       box-shadow: 0 3px 5px $toggle-shadow-active;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-59%, -50%);
   }
 }

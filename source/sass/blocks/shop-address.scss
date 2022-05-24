@@ -1,6 +1,12 @@
 .shop-address {
   position: relative;
   background-color: $secondary-white;
+
+  @media (min-width: $table-width) {
+    &--another {
+      background-color: $program-item-bg;
+    }
+  }
 }
 
 .shop-address__container {
@@ -15,8 +21,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    padding-left: 0;
     position: absolute;
-    top: 80px;
+    top: 34px;
     left: 0;
     right: 0;
   }
@@ -34,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    padding: 56px 80px;
+    padding: 60px 80px;
     width: 565px;
     background-color: $secondary-white;
   }
@@ -68,6 +76,11 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -5px;
+    text-align: left;
   }
 }
 
