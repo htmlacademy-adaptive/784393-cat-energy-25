@@ -13,9 +13,6 @@
 // Контаинер
 @import "blocks/container.scss";
 
-// Скрытые заголовки
-@import "blocks/visually-hidden.scss";
-
 // Шапка
 @import "blocks/header.scss";
 
@@ -53,7 +50,7 @@
 @import "blocks/form.scss";
 
 // Карточка товара
-@import "blocks/product.scss";
+@import "blocks/product-details.scss";
 
 // Блок с картой
 @import "blocks/map.scss"
