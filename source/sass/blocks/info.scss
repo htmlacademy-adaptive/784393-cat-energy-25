@@ -1,0 +1,138 @@
+.info {
+  padding-top: 18px;
+  padding-bottom: 30px;
+
+  @media (min-width: $table-width) {
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+    padding-bottom: 10px;
+  }
+}
+
+.info__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $secondary-color;
+  line-height: 40px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 71px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.info__list {
+  @include resseting-lists;
+  display: grid;
+  grid-template-columns: 1fr;
+  counter-reset: item-number;
+
+  @media (min-width: $table-width) {
+    grid-template-columns: 250px 250px;
+    column-gap: 135px;
+    row-gap: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 75px;
+  }
+}
+
+.info__item {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  counter-increment: item-number;
+
+  &::before {
+    margin-right: 20px;
+    display: block;
+    content: "";
+    min-width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $second-element-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/index/icon-leaf.svg");
+    }
+  }
+
+  &--tub {
+    &::before {
+      background-image: url("../img/index/icon-tub.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../img/index/icon-eat.svg");
+    }
+  }
+
+  &--alarm {
+    &::before {
+      background-image: url("../img/index/icon-alarm.svg");
+    }
+  }
+
+  @media (min-width: $table-width) {
+    flex-direction: column;
+    margin-bottom: 77px;
+
+    &::before {
+      margin-right: auto;
+      margin-bottom: 33px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(item-number);
+      position: absolute;
+      top: -40px;
+      right: 2px;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $program-item-bg;
+      z-index: -1;
+    }
+
+    &--leaf {
+      &::after {
+        right: 26px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.info__item-content {
+  margin: 0;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 250px;
+  }
+}

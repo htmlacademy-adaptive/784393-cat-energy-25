@@ -1,0 +1,230 @@
+.total {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  background-color: $rare-gray;
+
+  @media (min-width: $table-width) {
+    padding-top: 43px;
+    padding-bottom: 60px;
+    position: relative;
+    background-color: $secondary-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: $rare-second-gray;
+    }
+  }
+
+  @media (min-width: $table-width) {
+    background-image: linear-gradient(to bottom, $secondary-white 0 619px, $program-item-bg 619px 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, $secondary-white 0 201px, $program-item-bg 201px 100%);
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.total__container {
+  @media (min-width: $table-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.total__content-wrapper {
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    width: 435px;
+  }
+}
+
+.total__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $secondary-color;
+  line-height: 40px;
+  text-align: left;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 65px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 147px;
+  }
+}
+
+.total__info {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 52px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-right: 0;
+  }
+}
+
+.total__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 51px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.total__item {
+  margin-bottom: 35px;
+  margin-right: 32px;
+  padding-top: 12px;
+  width: 124px;
+  text-align: center;
+  border: 1px solid $rare-second-leght-gray;
+  border-radius: 3px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (min-width: $table-width) {
+    margin-right: 42px;
+    padding-top: 15px;
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.total__item-quantity {
+  margin-bottom: 7px;
+  display: block;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $secondary-color;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.total__item-description {
+  margin: 0 auto;
+  margin-bottom: -17px;
+  display: block;
+  max-width: 87px;
+  line-height: 14px;
+  background-color: $rare-gray;
+
+  @media (min-width: $table-width) {
+    margin-bottom: -8px;
+    max-width: 140px;
+    background-color: $secondary-white;
+
+    &--less {
+      max-width: 115px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $program-item-bg;
+  }
+}
+
+.total__applied {
+  margin: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  flex-grow: 1;
+  font-family: "Oswald", sans-serif;
+  color: $secondary-color;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    margin-left: auto;
+    padding-right: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+.total__applied-info {
+  @media (min-width: $table-width) {
+    margin-top: 6px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-right: 66px;
+  }
+}
+
+.total__applied-price {
+  @media (min-width: $table-width) {
+    margin-top: 8px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

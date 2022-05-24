@@ -1,0 +1,78 @@
+.catalog {
+  padding-bottom: 15px;
+
+  @media (min-width: $table-width) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+  }
+}
+
+.catalog__container {
+  padding-top: 27px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 0;
+    right: 0;
+    background-color: $decorate-line;
+  }
+
+  @media (min-width: $table-width) {
+    padding-top: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $secondary-color;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 162px;
+    padding-left: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
+  }
+}
+
+.catalog__list {
+  @include resseting-lists;
+  margin: auto;
+  max-width: 320px;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 325px 325px;
+    column-gap: 60px;
+    row-gap: 141px;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 147px;
+  }
+}

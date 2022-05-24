@@ -1,0 +1,94 @@
+.shop-address {
+  position: relative;
+  background-color: $secondary-white;
+
+  @media (min-width: $table-width) {
+    &--another {
+      background-color: $program-item-bg;
+    }
+  }
+}
+
+.shop-address__container {
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 35px;
+    padding-top: 61px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    padding-left: 0;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.shop-address__detail {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+
+  @media (min-width: $table-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding: 60px 80px;
+    width: 565px;
+    background-color: $secondary-white;
+  }
+}
+
+.shop-address__info {
+  margin: 0;
+  width: 140px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $rare-dark;
+
+  @media (min-width: $table-width) {
+    width: 180px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.shop-address__address {
+  margin: 0;
+  width: 140px;
+  line-height: 20px;
+
+  @media (min-width: $table-width) {
+    margin-top: -3px;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -5px;
+    text-align: left;
+  }
+}
+
+.shop-address__address-decorate {
+  display: inline;
+
+  @media (min-width: $table-width) {
+    margin-top: 20px;
+    display: block;
+  }
+}

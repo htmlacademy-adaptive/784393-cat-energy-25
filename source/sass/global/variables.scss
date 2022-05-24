@@ -1,0 +1,38 @@
+// Цвета
+$primary-color: #444444;
+$secondary-color: #000000;
+$secondary-white: #ffffff;
+$secondary-dark: #222222;
+$secondary-gray: #cccccc;
+$input-border-color: #e7e7e7;
+$program-item-bg: #f2f2f2;
+$rare-dark: #111111;
+$rare-gray: #eaeaea;
+$section-bg: rgba(104, 183, 56, 0.85);
+$second-element-bg: #68b738;
+$rare-second-gray: #e6e6e6;
+$rare-second-leght-gray: #cdcdcd;
+$decorate-line: #d9d9d9;
+$effect-color: #5eaa2f;
+$efferct-opacity: rgba(255, 255, 255, 0.3);
+$effect-bg: #ebebeb;
+$effect-hover-color: rgba(68, 68, 68, 0.3);
+$error-color: #ff8282;
+$effect-hover-input: #bababa;
+$background-slider: #dcdcdc;
+$toggle-shadow: rgba(0, 0, 0, 0.16);
+$toggle-shadow-hover: rgba(0, 0, 0, 0.19);
+$toggle-shadow-active: rgba(0, 0, 0, 0.2);
+$social-icon-color: #666666;
+
+// Примеси
+@mixin resseting-lists ($margin-reset: 0, $padding-reset: 0, $list-style: none) {
+  margin: $margin-reset;
+  padding: $padding-reset;
+  list-style: $list-style;
+}
+
+// Viewports
+$table-width: 768px;
+$desktop-width: 1260px;
+$mobile-width-only: 767px;
