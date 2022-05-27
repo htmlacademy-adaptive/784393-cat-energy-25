@@ -2,7 +2,7 @@
   margin: 0;
   margin-bottom: 39px;
   max-width: 226px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -91,7 +91,7 @@
 
 .form__data-info {
   margin-right: 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -109,7 +109,7 @@
   width: 100%;
 
   &::placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -265,7 +265,7 @@
 
 .form__programm-name {
   display: inline-block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: $secondary-dark;
@@ -334,7 +334,7 @@
   position: relative;
   display: inline-block;
   background-color: $secondary-white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
@@ -376,7 +376,7 @@
 
 .form__contact-info {
   margin-right: 10px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -394,14 +394,14 @@
 
 .form__contact-input {
   padding: 11px 13px 8px 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   width: 100%;
   border: 1px solid $rare-second-leght-gray;
 
   &::placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -513,7 +513,7 @@
   padding-right: 23px;
   position: relative;
   display: inline-block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
@@ -537,7 +537,7 @@
   resize: none;
 
   &::placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
   }
@@ -618,7 +618,7 @@
   padding-left: 23px;
   padding-right: 23px;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $secondary-color;
@@ -730,7 +730,7 @@
 }
 
 .form__additionally-name {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: $secondary-color;
